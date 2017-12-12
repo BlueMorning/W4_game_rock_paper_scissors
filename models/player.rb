@@ -3,9 +3,9 @@ class Player
   attr_reader :weapon
   attr_accessor :nb_wins
 
-  def initialize(nb_wins)
+  def initialize(nb_wins, weapon = nil)
     @win      = false
-    @weapon   = nil
+    @weapon   = weapon
     @nb_wins  = nb_wins
   end
 
