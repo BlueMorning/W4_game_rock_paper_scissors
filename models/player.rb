@@ -1,6 +1,7 @@
 class Player
 
   attr_reader :weapon
+  attr_accessor :nb_wins
 
   def initialize(nb_wins)
     @win      = false
