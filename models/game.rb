@@ -3,6 +3,8 @@ require_relative("player")
 # Class which manages the game, player_1 is human and player_2 is the computer
 class Game
 
+  attr_reader :current_round, :nb_round_to_play, :player_1, :score_player_2
+
   WEAPONS = ["rock", "paper", "scissors"]
 
   def initialize(current_round, nb_rounds_to_play, player_1, player_2)
