@@ -1,0 +1,50 @@
+<div class="flexbox_games">
+
+    <% if(! @game.is_game_over()) %>
+
+    <% end %>
+
+      <div class="score">
+        ROUND N°
+        <% if(! @game.is_game_over()) %>
+          <%= @game.current_round %>
+        <% else %>
+          <%= @game.current_round - 1 %>
+        <% end %>
+        /
+        <%= @game.nb_rounds_to_play %>
+          <br/>
+        <%= @game.player_1.nb_wins %> Vs <%= @game.player_2.nb_wins %><br/>
+        <div>
+          <div class="weapon_chosen"><%= @game.player_1.weapon %></div>
+          <div class="weapon_chosen">|</div>
+          <div class="weapon_chosen"><%= @game.player_2.weapon %></div>
+        </div>
+      </div>
+
+
+      <% if(! @game.is_game_over()) %>
+        <div class="game_3_rounds">
+          <a href="<%= @rock_link %>">
+            ROCK
+          </a>
+        </div>
+        <div class="game_5_rounds">
+          <a href="<%= @paper_link %>">
+            PAPER
+          </a>
+        </div>
+        <div class="game_9_rounds">
+          <a href="<%= @scissors_link %>">
+            SCISSORS
+          </a>
+        </div>
+      <% else %>
+        <div class="game_9_rounds">
+          <a href="<%= @play_again %>">
+            PLAY AGAIN
+          </a>
+        </div>
+      <% end %>
+    </div>
+</div>

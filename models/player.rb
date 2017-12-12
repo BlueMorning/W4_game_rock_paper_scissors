@@ -11,7 +11,7 @@ class Player
 
   #Method used to randomly define the weapon for the computer player
   def set_random_weapon(weapons_array)
-    @weapon = weapons_array[Random.new.rand(0..(weapons_array.length-1)]
+    @weapon = weapons_array[Random.new.rand(0..(weapons_array.length-1))]
   end
 
 end

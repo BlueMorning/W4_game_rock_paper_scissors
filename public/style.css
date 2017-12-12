@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', 'Arial', sans-serif;
+}
+
+
+.div_main {
+  background-image: linear-gradient(rgba(0,0,0, 0.4), rgba(0,0,0, 0.1)), url(images/sf2_background.png);
+  height: 100vh; /* 100% of the view port */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* Let the image scroll behind */
+  position: relative;
+}
+
+.flexbox_games {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  justify-content: center;
+  width: 200px;
+  height: 100%;
+}
+
+.game_3_rounds {
+  height: 100px;
+  background-color: #2ecc71;
+  border-radius: 5px;
+  margin: 20px 0px;
+  font-size: 20px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.game_5_rounds {
+  height: 100px;
+  background-color: #e67e22;
+  color: #ffffff;
+  border-radius: 5px;
+  margin: 20px 0px;
+  font-size: 20px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.game_9_rounds {
+  height: 100px;
+  background-color: #e74c3c;
+  color: #ffffff;
+  border-radius: 5px;
+  margin: 20px 0px;
+  font-size: 20px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.game_3_rounds a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+}
+
+.game_5_rounds a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+}
+
+.game_9_rounds a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+}
+
+.score {
+  background-color: #111111;
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 300;
+  width: 100%;
+  border-radius: 5px;
+  text-align: center;
+  padding: 10px;
+}
+
+.weapon_chosen {
+  display: inline-block;
+}
